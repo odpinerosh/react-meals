@@ -2,7 +2,7 @@
     align-items: center;
     background-color: rgb(89, 8, 8);
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     color: antiquewhite;
     cursor: pointer;
     display: flex;
@@ -10,6 +10,7 @@
     font-size: 1.2rem;
     height: 2rem;
     justify-content: space-around;
+    padding: 0.75rem 3rem;
 }
 
 .header-btn:hover,
@@ -25,10 +26,11 @@
 
 
 .header-btn-items {
-    background-color: aliceblue;
-    border-radius: 50%;
-    color: rgb(89, 8, 8);
+    background-color: brown;
+    border-radius: 20px;
+    color: antiquewhite;
     font-size: 1rem;
     margin-left: 15px;
+    padding: 0.25rem 1rem;
 }
 

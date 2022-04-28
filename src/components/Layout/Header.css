@@ -12,6 +12,7 @@
     left: 0;
     top: 0;
     width: 100vw;
+    z-index: 10;
 }
 
 .header-h1 {
@@ -24,6 +25,8 @@
 }
 
 .header-img-cont img {
-    height: auto;
-    width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+  width: 110%;
 }
