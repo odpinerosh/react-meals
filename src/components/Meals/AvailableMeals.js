@@ -1,6 +1,7 @@
 /*
     Este componente muestra la lista de Comidas disponibles
 */
+import React from "react";
 import Card from '../UI/Card';
 import MealItem from '../Meals/MealItem/MealItem';
 import DUMMY_MEALS from "./DummyMeals";
@@ -12,6 +13,9 @@ const AvailableMeals = () => {
         meal => <MealItem
                     className='meal-li' 
                     key={meal.id}
+                    name={meal.name}
+                    description={meal.description}
+                    price={meal.price}
                     meal={meal} 
                 />
     );

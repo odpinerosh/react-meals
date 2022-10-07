@@ -1,6 +1,7 @@
 /*
     Este componente muestra el mensaje de bienvenida
 */
+import React from "react";
 import Card from '../UI/Card';
 import './MealsSummary.css';
 

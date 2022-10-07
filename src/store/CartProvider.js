@@ -1,11 +1,13 @@
-import { useReducer } from "react";
+import React, { useReducer } from "react";
 import CartContext from "./cart-context";
 
+/* Estado inicial del Carrito - Se retorna en el REDUCER*/
 const defaultCartState = {
     items: [],
     totalAmount: 0
 };
 
+/*Función REDUCER - Reevalúa el componente*/
 const cartReducer = (state, action) => {
     if (action.type === 'ADD') {
         const updatedItems = state.items.concat(action.item);
