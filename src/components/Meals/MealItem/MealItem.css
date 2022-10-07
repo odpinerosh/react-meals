@@ -1,0 +1,25 @@
+.meal-li {
+    border-bottom: 1px solid rgba(223, 210, 210, 0.604);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.meal-article * {
+    margin: 0.5rem 0;
+}
+
+.meal-name {
+    margin: 0;
+}
+
+.meal-description {
+    font-style: italic;
+}
+
+.meal-price {
+    color: rgb(235, 142, 20);
+    font-weight: bold;
+}

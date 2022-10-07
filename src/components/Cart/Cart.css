@@ -1,0 +1,23 @@
+.cart-ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.cart-total, .cart-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.cart-total {
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.cart-buttons {
+    justify-content: flex-end;
+    margin-top: 1rem;
+}

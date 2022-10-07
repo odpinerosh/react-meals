@@ -1,0 +1,17 @@
+.modal-backdrop {
+    align-items: center;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 20;
+}
+
+.modal {
+    position:relative;
+    z-index: 30;
+}

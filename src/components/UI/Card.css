@@ -1,0 +1,28 @@
+#card-summary {
+    background-color: rgb(29, 34, 39);
+    color:aliceblue;
+    width: 50vw;
+}
+
+#card-meals-list {
+    background-color:aliceblue;
+    color: rgb(6, 17, 17);
+    width: 75vw;
+}
+
+#card-cart {
+    background-color:aliceblue;
+    color: rgb(6, 17, 17);
+    width: 50vw;
+}
+
+.card {
+    border-radius: 10px;
+    margin: 2rem auto;
+    padding: 2rem;
+   
+}
+
+.card-box-shadow {
+    box-shadow: 2px 2px 15px 2px rgba(221, 221, 240, 0.72);
+}
