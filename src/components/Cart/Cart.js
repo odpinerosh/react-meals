@@ -7,10 +7,10 @@ import CartContext from "../../store/cart-context";
 import "./Cart.css";
 
 const Cart = (props) => {
-
+  
   const cartCntx = useContext(CartContext);
   //const cartItems = [{ id: "c1", name: "Sushi", value: 12.99, amount: 4 }];
-  //const uList = cartCntx.items.map((item) => <li className="cart-li">{item.name}</li>);
+  /*const uList = cartCntx.items.map((item) => <!-- li className="cart-li">{item.name}</li>);*/
  /*  const uList = cartCntx.items.map((item) => (
                                               <CartItem key={item.id} 
                                                         name={item.name} 
@@ -35,7 +35,7 @@ const Cart = (props) => {
         <ul className="cart-ul">
           {
             cartCntx.items.map((item) =>
-              <CartItem key={item.id} 
+              <CartItem key={item.id + '_' +item.amount} 
                         name={item.name} 
                         amount={item.amount} 
                         price={item.price} 
@@ -44,6 +44,8 @@ const Cart = (props) => {
             )
           }
         </ul>
+      </Card>
+      <div className='cart-controls'>
         <div className="cart-total">
             <span>Total:</span>
             <span>{totalAmount}</span>
@@ -52,7 +54,7 @@ const Cart = (props) => {
             <Button caption='Close' class='btn btn-close' onClick={props.onCloseCart}/>
             {hasItems && <Button caption ='Order' class='btn ui-btn'/>}
         </div>
-      </Card>
+      </div>
     </Modal>
   );
 };

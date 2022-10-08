@@ -6,8 +6,8 @@ import './MealItem.css';
 
 const MealItem = props => {
     const cartCntx = useContext(CartContext);
-    const price = `$${props.meal.price.toFixed(2)}`;
-
+    const price = `$${props.price.toFixed(2)}`;
+    
     const addToCartHandler = amount => {
         cartCntx.addItem({
             id: props.id,
@@ -16,15 +16,14 @@ const MealItem = props => {
             price: props.price
         })
     };
-        
     return (
         <li className='meal-li'>
             <article className='meal-article'>
-                <h3 className='meal-name'>{props.meal.name}</h3>
-                <div className='meal-description'>{props.meal.description}</div>
+                <h3 className='meal-name'>{props.name}</h3>
+                <div className='meal-description'>{props.description}</div>
                 <div className='meal-price'>{price}</div>
             </article>
-            <MealItemForm onAddToCart={addToCartHandler} id={props.meal.id}/>
+            <MealItemForm onAddToCart={addToCartHandler} id={props.id}/>
         </li>
     );
 

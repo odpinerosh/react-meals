@@ -8,18 +8,17 @@ import DUMMY_MEALS from "./DummyMeals";
 import './AvailableMeals.css';
 
 const AvailableMeals = () => {
-
-    const mealsList = DUMMY_MEALS.map(
+     const mealsList = DUMMY_MEALS.map(
         meal => <MealItem
-                    className='meal-li' 
                     key={meal.id}
+                    className='meal-li' 
+                    id={meal.id}
                     name={meal.name}
                     description={meal.description}
                     price={meal.price}
-                    meal={meal} 
                 />
     );
-    
+
     return (
         <Card cardId='card-meals-list'>
             <ul className='meals-ulist'>

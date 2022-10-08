@@ -1,8 +1,15 @@
 .cart-ul {
     list-style: none;
+    max-height: 15rem;
+    overflow: scroll;
+    overflow-x: hidden;
     padding: 0;
 }
 
+.cart-controls {
+    margin: 0 auto;
+    width: 50vw;
+}
 
 .cart-total, .cart-buttons {
     display: flex;
@@ -21,3 +28,22 @@
     justify-content: flex-end;
     margin-top: 1rem;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
